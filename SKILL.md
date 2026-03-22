@@ -1,3 +1,19 @@
+---
+name: check-citations
+description: Verify academic citations against CrossRef, Semantic Scholar, and OpenAlex. Detects AI-hallucinated references, chimeric citations, and suspicious patterns.
+version: 1.0.0
+metadata:
+  openclaw:
+    requires:
+      bins:
+        - python3
+    install:
+      - kind: uv
+        package: requests
+    emoji: "\U0001F50D"
+    homepage: https://github.com/PHY041/claude-skill-citation-checker
+---
+
 # check-citations
 
 Verify academic citations against CrossRef, Semantic Scholar, and OpenAlex. Detects AI-hallucinated references, chimeric citations (real title + wrong authors), and suspicious patterns before submission.
